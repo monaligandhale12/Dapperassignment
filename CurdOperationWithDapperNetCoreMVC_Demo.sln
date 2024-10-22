@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CurdOperationWithDapperNetCoreMVC_Demo", "CurdOperationWithDapperNetCoreMVC_Demo\CurdOperationWithDapperNetCoreMVC_Demo.csproj", "{1B36C961-F747-4A45-90AE-E3C47258268C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1B36C961-F747-4A45-90AE-E3C47258268C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B36C961-F747-4A45-90AE-E3C47258268C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B36C961-F747-4A45-90AE-E3C47258268C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B36C961-F747-4A45-90AE-E3C47258268C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {26072D98-C002-4AFC-A081-6F24C1744EFC}
+	EndGlobalSection
+EndGlobal
