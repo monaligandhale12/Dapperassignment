@@ -1,0 +1,58 @@
+﻿@model CurdOperationWithDapperNetCoreMVC_Demo.Models.ProductModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+
+
+<h2>Update Product</h2>
+
+<div class="row card">
+    <div class="col-md-6">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div><br />
+            <div class="form-group">
+                <label asp-for="ProductId" class="control-label"></label>
+                <input asp-for="ProductId" class="form-control" />
+                <span asp-validation-for="ProductId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ProductName" class="control-label"></label>
+                <input asp-for="ProductName" class="form-control" />
+                <span asp-validation-for="ProductName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Price" class="control-label"></label>
+                <input asp-for="Price" class="form-control" />
+                <span asp-validation-for="Price" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ProdcutDescription" class="control-label"></label>
+                <input asp-for="ProdcutDescription" class="form-control" />
+                <span asp-validation-for="ProdcutDescription" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CreatedOn" class="control-label"></label>
+                <input asp-for="CreatedOn" class="form-control" />
+                <span asp-validation-for="CreatedOn" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UpdateOn" class="control-label"></label>
+                <input asp-for="UpdateOn" class="form-control" />
+                <span asp-validation-for="UpdateOn" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index" class="btn btn-info">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

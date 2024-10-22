@@ -1,0 +1,65 @@
+﻿@model IEnumerable<CurdOperationWithDapperNetCoreMVC_Demo.Models.ProductModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p class="" style="margin-left: 80%;">
+    <a asp-action="Create" class="btn btn-primary">Create New</a>
+</p>
+<div class="table-responsive">
+<table class="table">
+    <thead>
+        <tr>
+          
+            <th>
+                @Html.DisplayNameFor(model => model.ProductName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProdcutDescription)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CreatedOn)
+            </th>
+           
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+           
+            <td>
+                @Html.DisplayFor(modelItem => item.ProductName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Price)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProdcutDescription)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CreatedOn)
+            </td>
+         
+            <td>
+              
+                        <a href="@Url.Action("Details", "Products", new { id = item.ProductId })" class="btn btn-sm btn-info"><i class="fa fa-eye-slash"></i></a>
+                        <a href="@Url.Action("Edit", "Products", new { id = item.ProductId })" class="btn btn-sm btn-primary"><i class="fa fa-pencil"></i></a>
+                        <a href="@Url.Action("Delete", "Products", new { id = item.ProductId })" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i></a>
+
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+</div>
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" ></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   
